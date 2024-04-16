@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Copyright (c) 2024 braintec AG (https://braintec.com)
+All Rights Reserved
+Licensed under the Odoo Proprietary License v1.0 (OPL).
+See LICENSE file for full licensing details.
+-->
+
+<templates xml:space="preserve">
+
+    <t t-name="bt_find_it_ranking.Ranking">
+        <div>
+            <div class="bt-find-ranking-title mb-5">
+                <h3>Ranking Players</h3>
+            </div>
+            <div class="bt-find-ranking">
+                <t t-foreach="props.ranking" t-as="mark" t-key="mark_index">
+                    <p><t t-out="mark.player"/> -- <t t-out="mark.points"/></p>
+                </t>
+            </div>
+        </div>
+    </t>
+
+</templates>

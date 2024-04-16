@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Copyright (c) 2024 braintec AG (https://braintec.com)
+All Rights Reserved
+Licensed under the Odoo Proprietary License v1.0 (OPL).
+See LICENSE file for full licensing details.
+-->
+
+<templates xml:space="preserve">
+
+<t t-name="bt_find_it.Game">
+  <div class="bt-find-game shadow">
+    <t t-component="state.Component" t-props="state.props"/>
+  </div>
+</t>
+
+</templates>

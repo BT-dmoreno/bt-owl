@@ -1,0 +1,35 @@
+/*!
+ * Copyright (c) 2024 braintec AG (https://braintec.com)
+ * All Rights Reserved
+ * Licensed under the Odoo Proprietary License v1.0 (OPL).
+ * See LICENSE file for full licensing details.
+*/
+
+.bt-find-button {
+    height: 60px;
+    position: relative;
+    padding: 1rem;
+    border-radius: 10px;
+    background-color: lightsalmon;
+    color: white;
+    font-weight: bolder;
+    display: inline;
+    cursor: pointer;
+    border-right: 2px solid darkgray;
+    border-bottom: 2px solid darkgray;
+
+    &:hover:not(.disabled) {
+        border: none;
+        right: -2px;
+        bottom: -2px;
+    }
+
+    &.disabled {
+        cursor: not-allowed;
+        background-color: lightgrey;
+        color: gray;
+        border: none;
+        right: -2px;
+        bottom: -2px;
+    }
+}

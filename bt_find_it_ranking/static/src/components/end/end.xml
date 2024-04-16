@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Copyright (c) 2024 braintec AG (https://braintec.com)
+All Rights Reserved
+Licensed under the Odoo Proprietary License v1.0 (OPL).
+See LICENSE file for full licensing details.
+-->
+
+<templates xml:space="preserve">
+
+    <t t-inherit="bt_find_it.End" t-inherit-mode="extension">
+        <xpath expr="//div[hasclass('bt-find-end-message')]" position="after">
+            <Ranking ranking="state and state.ranking"/>
+        </xpath>
+    </t>
+
+</templates>

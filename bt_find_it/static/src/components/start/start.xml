@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Copyright (c) 2024 braintec AG (https://braintec.com)
+All Rights Reserved
+Licensed under the Odoo Proprietary License v1.0 (OPL).
+See LICENSE file for full licensing details.
+-->
+
+<templates xml:space="preserve">
+
+    <t t-name="bt_find_it.Start">
+        <div class="bt-find-start">
+            <p>Enter your name:</p>
+            <input type="text" class="bt-find-input mb-3" t-ref="autofocus" t-model="state.userName" />
+            <Button string="'Start'" onClick.bind="onClickStart" disabled="!state.userName"/>
+        </div>
+    </t>
+
+</templates>

@@ -1,0 +1,23 @@
+/*!
+ * Copyright (c) 2024 braintec AG (https://braintec.com)
+ * All Rights Reserved
+ * Licensed under the Odoo Proprietary License v1.0 (OPL).
+ * See LICENSE file for full licensing details.
+*/
+
+.bt-find-emoji {
+    font-size: 1.9rem;
+
+    &.clickable {
+        cursor: pointer;
+
+        &:hover span {
+            border-radius: 100%;
+            box-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.15) !important
+        }
+    }
+
+    &.clicked {
+            filter: grayscale(100%);
+        }
+}

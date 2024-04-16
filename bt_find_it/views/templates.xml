@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Copyright (c) 2024 braintec AG (https://braintec.com)
+All Rights Reserved
+Licensed under the Odoo Proprietary License v1.0 (OPL).
+See LICENSE file for full licensing details.
+-->
+<odoo>
+
+    <template id="bt_find_it.page" name="Find It Game Page">
+        <html>
+            <head>
+                <link type="image/x-icon" rel="shortcut icon" href="/web/static/img/favicon.ico"/>
+                <t t-call-assets="web.assets_frontend"/>
+            </head>
+            <body/>
+        </html>
+    </template>
+
+</odoo>

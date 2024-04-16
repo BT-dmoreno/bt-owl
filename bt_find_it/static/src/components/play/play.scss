@@ -1,0 +1,41 @@
+/*!
+ * Copyright (c) 2024 braintec AG (https://braintec.com)
+ * All Rights Reserved
+ * Licensed under the Odoo Proprietary License v1.0 (OPL).
+ * See LICENSE file for full licensing details.
+*/
+
+.bt-find-play {
+  padding: 2rem;
+
+  .bt-find-play-container {
+    background-color: #dbffdb;
+    border-radius: 10px;
+    padding: 0.5rem;
+
+    .bt-find-play-container-inner {
+      display: flex;
+      flex-wrap: wrap;
+      justify-items: center;
+      align-items: center;
+    }
+  }
+
+  .bt-find-play-emojis {
+    height: 380px;
+  }
+
+  .bt-find-play-parameters {
+    min-height: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .bt-find-play-control {
+    display: flex;
+    align-items: flex-start;
+    justify-items: center;
+    justify-content: space-around;
+  }
+}
