@@ -7,12 +7,17 @@
  * See LICENSE file for full licensing details.
 */
 
-import {mount, whenReady} from "@odoo/owl";
-import {Layout} from "../components/layout/layout";
-import {templates} from "@web/core/assets";
+// TODO 1: Firstable we need to import some important stuff
+
+// -->> Import "templates" declared at "web/static/src/core/assets.js"
+
+// -->> Import "mount" and "whenReady" declared at "web/static/lib/owl/odoo_module.js"
+
+// -->> Import "Layout" located at "bt_find_it/static/src/components/layout/layout.js"
 
 
-// Mount the WebClient component when the document.body is ready
+
+// This is mounting the WebClient component when the document.body is ready
 whenReady(() => {
     mount(Layout, document.body, {
         templates,

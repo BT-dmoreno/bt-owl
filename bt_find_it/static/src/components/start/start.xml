@@ -12,7 +12,8 @@ See LICENSE file for full licensing details.
         <div class="bt-find-start">
             <p>Enter your name:</p>
             <input type="text" class="bt-find-input mb-3" t-ref="autofocus" t-model="state.userName" />
-            <Button string="'Start'" onClick.bind="onClickStart" disabled="!state.userName"/>
+            <!-- Still pending to use the onClick prop from Button component -->
+            <Button string="'Start'" disabled="!state.userName"/>
         </div>
     </t>
 

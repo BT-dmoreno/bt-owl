@@ -13,24 +13,17 @@ import { patch } from "@web/core/utils/patch";
 import { End } from "@bt_find_it/components/end/end";
 import { Ranking } from "../ranking/ranking";
 
+// TODO 7: We're going to add the ranking functionality to the existing End component.
+// https://github.com/odoo/odoo/blob/17.0/addons/mail/static/src/discuss/typing/common/composer_patch.js
 
-patch(End, {
-    components: {
-        ...End.components,
-        Ranking,
-    },
-});
+//  For this, we need to add the new Ranking component imported on top to the static  properties "components"
+//  of the End component.
 
-patch(End.prototype, {
-    setup() {
-        super.setup(...arguments);
-        this.state = useState({
-            ranking: [],
-        });
-        this.getRanking();
-    },
+//  -->> patch here End component and add Ranking to its components static property
 
-    getRanking() {
-        this.state.ranking = this.env.gameStore.games.sort((a, b) => a.points < b.points ? 1 : a.points > b.points ? -1 : 0).slice(0, 5)
-    }
-});
+
+//  And later, we also need to extend the "setup" method of the End component, to add a state to track the
+//  ranking values. The value we want to have in the state is the value of the gameStore.games (an array of
+//  objects), but we want them to be sorted by points (from bigger to smaller) and just the first 5 entries.
+
+// -->> patch here End component and add state containing first five sorted games

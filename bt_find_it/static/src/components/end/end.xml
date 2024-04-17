@@ -11,8 +11,9 @@ See LICENSE file for full licensing details.
     <t t-name="bt_find_it.End">
         <div class="bt-find-end">
             <div class="bt-find-end-message">
-                <t t-if="store.currentGame.points">
-                    <p>Hey <t t-out="store.currentGame.player"/>, you made a total of <t t-out="store.currentGame.points"/> points this time!</p>
+                <t t-if="store?.currentGame?.points">
+                    <p>Hey <t t-out="store.currentGame.player"/>, you made a total of <t
+                            t-out="store?.currentGame?.points"/> points this time!</p>
                 </t>
                 <t t-else="">
                     <p>Your did nothing...</p>

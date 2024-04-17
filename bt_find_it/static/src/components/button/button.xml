@@ -8,9 +8,11 @@ See LICENSE file for full licensing details.
 
 <templates xml:space="preserve">
 
+    <!-- TODO 4: Class "disabled" needs to be dynamic, depending on the prop "disabled", and we need to execute
+    the method "onClick" when a user clicks on this div container   -->
     <t t-name="bt_find_it.Button">
-        <div class="bt-find-button" t-att-class="{'disabled': props.disabled}" t-on-click="onClick">
-          <span t-out="props.string"/>
+        <div class="bt-find-button disabled">
+            <!-- And here inside, would be nice if we can get the string passed in the props as content -->
         </div>
     </t>
 

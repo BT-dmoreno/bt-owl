@@ -10,7 +10,7 @@ See LICENSE file for full licensing details.
 
     <t t-inherit="bt_find_it.End" t-inherit-mode="extension">
         <xpath expr="//div[hasclass('bt-find-end-message')]" position="after">
-            <Ranking ranking="state and state.ranking"/>
+            <!--Add here the <Ranking/> component, with its prop "ranking", being this an array of objets-->
         </xpath>
     </t>
 
